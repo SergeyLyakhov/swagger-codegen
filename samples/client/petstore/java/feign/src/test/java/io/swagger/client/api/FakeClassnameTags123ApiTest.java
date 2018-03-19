@@ -26,7 +26,7 @@ public class FakeClassnameTags123ApiTest {
     /**
      * To test class name in snake case
      *
-     * 
+     * To test class name in snake case
      */
     @Test
     public void testClassnameTest() {
@@ -35,5 +35,6 @@ public class FakeClassnameTags123ApiTest {
 
         // TODO: test validations
     }
+
     
 }

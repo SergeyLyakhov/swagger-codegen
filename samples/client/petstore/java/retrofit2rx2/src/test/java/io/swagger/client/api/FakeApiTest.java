@@ -107,7 +107,7 @@ public class FakeApiTest {
         OffsetDateTime dateTime = null;
         String password = null;
         String paramCallback = null;
-        // Void response = api.testEndpointParameters(number, _double, patternWithoutDelimiter, _byte, integer, int32, int64, _float, string, binary, date, dateTime, password, paramCallback);
+        // api.testEndpointParameters(number, _double, patternWithoutDelimiter, _byte, integer, int32, int64, _float, string, binary, date, dateTime, password, paramCallback);
 
         // TODO: test validations
     }
@@ -126,7 +126,19 @@ public class FakeApiTest {
         String enumQueryString = null;
         Integer enumQueryInteger = null;
         Double enumQueryDouble = null;
-        // Void response = api.testEnumParameters(enumFormStringArray, enumFormString, enumHeaderStringArray, enumHeaderString, enumQueryStringArray, enumQueryString, enumQueryInteger, enumQueryDouble);
+        // api.testEnumParameters(enumFormStringArray, enumFormString, enumHeaderStringArray, enumHeaderString, enumQueryStringArray, enumQueryString, enumQueryInteger, enumQueryDouble);
+
+        // TODO: test validations
+    }
+    /**
+     * test inline additionalProperties
+     *
+     * 
+     */
+    @Test
+    public void testInlineAdditionalPropertiesTest() {
+        Object param = null;
+        // api.testInlineAdditionalProperties(param);
 
         // TODO: test validations
     }
@@ -139,7 +151,7 @@ public class FakeApiTest {
     public void testJsonFormDataTest() {
         String param = null;
         String param2 = null;
-        // Void response = api.testJsonFormData(param, param2);
+        // api.testJsonFormData(param, param2);
 
         // TODO: test validations
     }

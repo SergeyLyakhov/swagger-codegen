@@ -37,13 +37,13 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * API tests for FakeClassnameTags123Api
+ * API tests for AnotherFakeApi
  */
 @RunWith(VertxUnitRunner.class)
 @Ignore
-public class FakeClassnameTags123ApiTest {
+public class AnotherFakeApiTest {
 
-    private FakeClassnameTags123Api api;
+    private AnotherFakeApi api;
 
     @Rule
     public RunTestOnContext rule = new RunTestOnContext();
@@ -54,20 +54,20 @@ public class FakeClassnameTags123ApiTest {
         Vertx vertx = rule.vertx();
         Configuration.setupDefaultApiClient(vertx, config);
 
-        api = new FakeClassnameTags123ApiImpl();
+        api = new AnotherFakeApiImpl();
     }
     
     /**
-     * To test class name in snake case
-     * To test class name in snake case
+     * To test special tags
+     * To test special tags
      *
      * @param context Vertx test context for doing assertions
      */
     @Test
-    public void testClassnameTest(TestContext context) {
+    public void testSpecialTagsTest(TestContext context) {
         Async async = context.async();
         Client body = null;
-        api.testClassname(body, result -> {
+        api.testSpecialTags(body, result -> {
             // TODO: test validations
             async.complete();
         });

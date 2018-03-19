@@ -1,0 +1,2560 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] swagger-codegen-project
+[INFO] swagger-codegen (core library)
+[INFO] swagger-codegen (executable)
+[INFO] swagger-codegen (maven-plugin)
+[INFO] swagger-generator
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building swagger-codegen-project 2.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ swagger-codegen-project ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ swagger-codegen-project ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ swagger-codegen-project ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-testng) @ swagger-codegen-project ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default) @ swagger-codegen-project ---
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.10.4:jar (attach-javadocs) @ swagger-codegen-project ---
+[INFO] Not executing Javadoc as the project is not a Java classpath-capable package
+[INFO] 
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ swagger-codegen-project ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ swagger-codegen-project ---
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\pom.xml to C:\Users\sliakh\.m2\repository\io\swagger\swagger-codegen-project\2.4.0-SNAPSHOT\swagger-codegen-project-2.4.0-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building swagger-codegen (core library) 2.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ swagger-codegen ---
+[INFO] Deleting D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ swagger-codegen ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ swagger-codegen ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ swagger-codegen ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1825 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ swagger-codegen ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 167 source files to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\classes
+[INFO] /D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-codegen/src/main/java/io/swagger/codegen/auth/AuthParser.java: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\src\main\java\io\swagger\codegen\auth\AuthParser.java uses or overrides a deprecated API.
+[INFO] /D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-codegen/src/main/java/io/swagger/codegen/auth/AuthParser.java: Recompile with -Xlint:deprecation for details.
+[INFO] /D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-codegen/src/main/java/io/swagger/codegen/DefaultCodegen.java: Some input files use unchecked or unsafe operations.
+[INFO] /D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-codegen/src/main/java/io/swagger/codegen/DefaultCodegen.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ swagger-codegen ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 129 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ swagger-codegen ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 190 source files to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\test-classes
+[WARNING] /D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-codegen/src/test/java/io/swagger/codegen/options/AkkaScalaClientOptionsProvider.java:[7,50] com.sun.org.apache.bcel.internal.classfile.Code is internal proprietary API and may be removed in a future release
+[WARNING] /D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-codegen/src/test/java/io/swagger/codegen/options/AkkaScalaClientOptionsProvider.java:[7,50] com.sun.org.apache.bcel.internal.classfile.Code is internal proprietary API and may be removed in a future release
+[WARNING] /D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-codegen/src/test/java/io/swagger/codegen/options/AkkaScalaClientOptionsProvider.java:[7,50] com.sun.org.apache.bcel.internal.classfile.Code is internal proprietary API and may be removed in a future release
+[INFO] /D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-codegen/src/test/java/io/swagger/codegen/ClientAuthInputTest.java: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\src\test\java\io\swagger\codegen\ClientAuthInputTest.java uses or overrides a deprecated API.
+[INFO] /D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-codegen/src/test/java/io/swagger/codegen/ClientAuthInputTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-codegen/src/test/java/io/swagger/codegen/testutils/AssertFile.java: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\src\test\java\io\swagger\codegen\testutils\AssertFile.java uses unchecked or unsafe operations.
+[INFO] /D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-codegen/src/test/java/io/swagger/codegen/testutils/AssertFile.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ swagger-codegen ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.swagger.codegen.akkascala.AkkaScalaClientCodegenTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in io.swagger.codegen.akkascala.AkkaScalaClientCodegenTest
+Running io.swagger.codegen.languages.JavaJAXRSSpecServerCodegenTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in io.swagger.codegen.languages.JavaJAXRSSpecServerCodegenTest
+
+Results :
+
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-testng) @ swagger-codegen ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+{
+  "swagger" : "2.0",
+  "paths" : {
+    "/foo/baz" : {
+      "post" : {
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "myBody",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/User"
+          }
+        } ]
+      }
+    }
+  },
+  "definitions" : {
+    "User" : {
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
+{
+  "swagger" : "2.0",
+  "paths" : {
+    "/foo/baz" : {
+      "get" : {
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "it works!",
+            "schema" : {
+              "type" : "object",
+              "additionalProperties" : {
+                "type" : "string"
+              },
+              "x-ext" : "ext-prop"
+            },
+            "x-foo" : "bar"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { }
+}
+{
+  "name" : "sample",
+  "classname" : "Sample",
+  "description" : "a sample model",
+  "classVarName" : "sample",
+  "modelJson" : "{\r\n  \"required\" : [ \"id\" ],\r\n  \"properties\" : {\r\n    \"id\" : {\r\n      \"type\" : \"integer\",\r\n      \"format\" : \"int64\"\r\n    },\r\n    \"theDate\" : {\r\n      \"type\" : \"string\",\r\n      \"format\" : \"date\"\r\n    },\r\n    \"createdAt\" : {\r\n      \"type\" : \"string\",\r\n      \"format\" : \"date-time\"\r\n    }\r\n  },\r\n  \"description\" : \"a sample model\"\r\n}",
+  "classFilename" : "Sample",
+  "unescapedDescription" : "a sample model",
+  "isAlias" : false,
+  "vars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\r\n  \"type\" : \"integer\",\r\n  \"format\" : \"int64\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "OffsetDateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "OffsetDateTime",
+    "datatypeWithEnum" : "OffsetDateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "OffsetDateTime",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date-time\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "requiredVars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\r\n  \"type\" : \"integer\",\r\n  \"format\" : \"int64\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "optionalVars" : [ {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "OffsetDateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "OffsetDateTime",
+    "datatypeWithEnum" : "OffsetDateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "OffsetDateTime",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date-time\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "readOnlyVars" : [ ],
+  "readWriteVars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\r\n  \"type\" : \"integer\",\r\n  \"format\" : \"int64\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "OffsetDateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "OffsetDateTime",
+    "datatypeWithEnum" : "OffsetDateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "OffsetDateTime",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date-time\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "allVars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\r\n  \"type\" : \"integer\",\r\n  \"format\" : \"int64\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "OffsetDateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "OffsetDateTime",
+    "datatypeWithEnum" : "OffsetDateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "OffsetDateTime",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date-time\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "parentVars" : [ ],
+  "mandatory" : [ "id" ],
+  "allMandatory" : [ "id" ],
+  "imports" : [ "ApiModel", "ApiModelProperty", "JsonProperty", "LocalDate", "OffsetDateTime" ],
+  "hasVars" : true,
+  "emptyVars" : false,
+  "hasMoreModels" : false,
+  "hasEnums" : false,
+  "isEnum" : false,
+  "hasRequired" : true,
+  "hasOptional" : true,
+  "isArrayModel" : false,
+  "hasChildren" : false,
+  "hasOnlyReadOnly" : false,
+  "vendorExtensions" : { }
+}
+{
+  "name" : "sample",
+  "classname" : "Sample",
+  "description" : "a sample model",
+  "classVarName" : "sample",
+  "modelJson" : "{\r\n  \"required\" : [ \"id\" ],\r\n  \"properties\" : {\r\n    \"id\" : {\r\n      \"type\" : \"integer\",\r\n      \"format\" : \"int64\"\r\n    },\r\n    \"theDate\" : {\r\n      \"type\" : \"string\",\r\n      \"format\" : \"date\"\r\n    },\r\n    \"createdAt\" : {\r\n      \"type\" : \"string\",\r\n      \"format\" : \"date-time\"\r\n    }\r\n  },\r\n  \"description\" : \"a sample model\"\r\n}",
+  "classFilename" : "Sample",
+  "unescapedDescription" : "a sample model",
+  "isAlias" : false,
+  "vars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\r\n  \"type\" : \"integer\",\r\n  \"format\" : \"int64\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "DateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "DateTime",
+    "datatypeWithEnum" : "DateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "DateTime",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date-time\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "requiredVars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\r\n  \"type\" : \"integer\",\r\n  \"format\" : \"int64\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "optionalVars" : [ {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "DateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "DateTime",
+    "datatypeWithEnum" : "DateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "DateTime",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date-time\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "readOnlyVars" : [ ],
+  "readWriteVars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\r\n  \"type\" : \"integer\",\r\n  \"format\" : \"int64\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "DateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "DateTime",
+    "datatypeWithEnum" : "DateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "DateTime",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date-time\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "allVars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\r\n  \"type\" : \"integer\",\r\n  \"format\" : \"int64\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "DateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "DateTime",
+    "datatypeWithEnum" : "DateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "DateTime",
+    "jsonSchema" : "{\r\n  \"type\" : \"string\",\r\n  \"format\" : \"date-time\"\r\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "parentVars" : [ ],
+  "mandatory" : [ "id" ],
+  "allMandatory" : [ "id" ],
+  "imports" : [ "ApiModel", "ApiModelProperty", "DateTime", "JsonProperty", "LocalDate" ],
+  "hasVars" : true,
+  "emptyVars" : false,
+  "hasMoreModels" : false,
+  "hasEnums" : false,
+  "isEnum" : false,
+  "hasRequired" : true,
+  "hasOptional" : true,
+  "isArrayModel" : false,
+  "hasChildren" : false,
+  "hasOnlyReadOnly" : false,
+  "vendorExtensions" : { }
+}
+[{hasMore=true, mediaType=application/vnd.company.v1+json}, {hasMore=true, mediaType=application/json}, {hasMore=true, mediaType=application/xml}, {hasMore=null, mediaType=text/plain}]
+Tests run: 574, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 19.288 sec - in TestSuite
+
+Results :
+
+Tests run: 574, Failures: 0, Errors: 0, Skipped: 3
+
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ swagger-codegen ---
+[INFO] Building jar: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\swagger-codegen-2.4.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default) @ swagger-codegen ---
+[INFO] Copying commons-lang3-3.4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\commons-lang3-3.4.jar
+[INFO] Copying libphonenumber-8.0.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\libphonenumber-8.0.0.jar
+[INFO] Copying javassist-3.19.0-GA.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\javassist-3.19.0-GA.jar
+[INFO] Copying annotations-2.0.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\annotations-2.0.1.jar
+[INFO] Copying jopt-simple-5.0.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\jopt-simple-5.0.3.jar
+[INFO] Copying cal10n-api-0.8.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\cal10n-api-0.8.1.jar
+[INFO] Copying guice-4.0-no_aop.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\guice-4.0-no_aop.jar
+[INFO] Copying aopalliance-1.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\aopalliance-1.0.jar
+[INFO] Copying byte-buddy-1.6.14.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\byte-buddy-1.6.14.jar
+[INFO] Copying slf4j-api-1.7.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\slf4j-api-1.7.12.jar
+[INFO] Copying jcommander-1.48.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\jcommander-1.48.jar
+[INFO] Copying testng-6.9.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\testng-6.9.6.jar
+[INFO] Copying jmustache-1.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\jmustache-1.12.jar
+[INFO] Copying slf4j-simple-1.7.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\slf4j-simple-1.7.12.jar
+[INFO] Copying httpclient-4.5.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\httpclient-4.5.2.jar
+[INFO] Copying byte-buddy-agent-1.6.14.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\byte-buddy-agent-1.6.14.jar
+[INFO] Copying swagger-annotations-1.5.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\swagger-annotations-1.5.18.jar
+[INFO] Copying snakeyaml-1.15.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\snakeyaml-1.15.jar
+[INFO] Copying swagger-compat-spec-parser-1.0.34.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\swagger-compat-spec-parser-1.0.34.jar
+[INFO] Copying commons-io-2.4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\commons-io-2.4.jar
+[INFO] Copying mockito-core-2.8.47.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\mockito-core-2.8.47.jar
+[INFO] Copying commons-codec-1.9.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\commons-codec-1.9.jar
+[INFO] Copying jackson-databind-2.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\jackson-databind-2.9.3.jar
+[INFO] Copying jsr305-3.0.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\jsr305-3.0.1.jar
+[INFO] Copying json-schema-validator-2.2.8.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\json-schema-validator-2.2.8.jar
+[INFO] Copying json-schema-core-1.2.8.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\json-schema-core-1.2.8.jar
+[INFO] Copying guava-20.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\guava-20.0.jar
+[INFO] Copying commons-logging-1.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\commons-logging-1.2.jar
+[INFO] Copying btf-1.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\btf-1.2.jar
+[INFO] Copying json-patch-1.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\json-patch-1.6.jar
+[INFO] Copying validation-api-1.1.0.Final.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\validation-api-1.1.0.Final.jar
+[INFO] Copying jackson-annotations-2.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\jackson-annotations-2.9.3.jar
+[INFO] Copying swagger-models-1.5.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\swagger-models-1.5.18.jar
+[INFO] Copying msg-simple-1.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\msg-simple-1.1.jar
+[INFO] Copying ant-launcher-1.7.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\ant-launcher-1.7.0.jar
+[INFO] Copying ant-1.7.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\ant-1.7.0.jar
+[INFO] Copying bsh-2.0b4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\bsh-2.0b4.jar
+[INFO] Copying activation-1.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\activation-1.1.jar
+[INFO] Copying reflections-0.9.10.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\reflections-0.9.10.jar
+[INFO] Copying joda-time-2.9.7.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\joda-time-2.9.7.jar
+[INFO] Copying junit-4.8.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\junit-4.8.1.jar
+[INFO] Copying mailapi-1.4.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\mailapi-1.4.3.jar
+[INFO] Copying commons-cli-1.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\commons-cli-1.2.jar
+[INFO] Copying jmockit-1.25.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\jmockit-1.25.jar
+[INFO] Copying objenesis-2.5.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\objenesis-2.5.jar
+[INFO] Copying javax.inject-1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\javax.inject-1.jar
+[INFO] Copying jackson-dataformat-yaml-2.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\jackson-dataformat-yaml-2.9.3.jar
+[INFO] Copying swagger-core-1.5.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\swagger-core-1.5.18.jar
+[INFO] Copying diffutils-1.3.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\diffutils-1.3.0.jar
+[INFO] Copying uri-template-0.9.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\uri-template-0.9.jar
+[INFO] Copying slf4j-ext-1.7.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\slf4j-ext-1.7.12.jar
+[INFO] Copying rhino-1.7R4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\rhino-1.7R4.jar
+[INFO] Copying jackson-coreutils-1.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\jackson-coreutils-1.6.jar
+[INFO] Copying jackson-core-2.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\jackson-core-2.9.3.jar
+[INFO] Copying commonmark-0.9.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\commonmark-0.9.0.jar
+[INFO] Copying swagger-parser-1.0.34.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\swagger-parser-1.0.34.jar
+[INFO] Copying httpcore-4.4.4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\lib\httpcore-4.4.4.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.2:test-jar (default) @ swagger-codegen ---
+[INFO] Building jar: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\swagger-codegen-2.4.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.10.4:jar (attach-javadocs) @ swagger-codegen ---
+[INFO] 
+Loading source files for package config...
+Loading source files for package io.swagger.codegen...
+Loading source files for package io.swagger.codegen.auth...
+Loading source files for package io.swagger.codegen.config...
+Loading source files for package io.swagger.codegen.examples...
+Loading source files for package io.swagger.codegen.ignore...
+Loading source files for package io.swagger.codegen.ignore.rules...
+Loading source files for package io.swagger.codegen.languages...
+Loading source files for package io.swagger.codegen.languages.features...
+Loading source files for package io.swagger.codegen.mustache...
+Loading source files for package io.swagger.codegen.utils...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_151
+Building tree for all the packages and classes...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\config\Config.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\config\ConfigParser.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\AbstractGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ClientOptInput.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ClientOpts.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CliOption.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\Codegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CodegenConfig.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CodegenConfigLoader.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CodegenConstants.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CodegenConstants.ENUM_PROPERTY_NAMING_TYPE.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CodegenConstants.MODEL_PROPERTY_NAMING_TYPE.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CodegenModel.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CodegenModelFactory.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CodegenModelType.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CodegenOperation.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CodegenParameter.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CodegenProperty.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CodegenResponse.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CodegenSecurity.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\CodegenType.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\DefaultCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\DefaultGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\Generator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\GlobalSupportingFile.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\InlineModelResolver.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\MetaGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\SupportingFile.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\auth\AuthMethod.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\auth\AuthParser.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\config\CodegenConfigurator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\config\CodegenConfiguratorUtils.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\examples\ExampleGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\examples\XmlExampleGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\CodegenIgnoreProcessor.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\DirectoryRule.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\EverythingRule.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\FileRule.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\IgnoreLineParser.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\InvalidRule.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\ParserException.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\RootedFileRule.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\Rule.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\Rule.Operation.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AbstractAdaCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AbstractCppCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AbstractCSharpCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AbstractEiffelCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AbstractGoCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AbstractJavaCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AbstractJavaJAXRSServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AbstractKotlinCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AbstractPhpCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AbstractScalaCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AbstractTypeScriptClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AdaCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AdaServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AkkaScalaClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AndroidClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\Apache2ConfigCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\ApexClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\AspNetCoreServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\BashClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\ClojureClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\ConfluenceWikiGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\CppRestClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\CSharpClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\CsharpDotNet2ClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\DartClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\EiffelClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\ElixirClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\ElmClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\ErlangClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\ErlangServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\FinchServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\FlashClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\FlaskConnexionCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\GoClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\GoServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\GroovyClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\HaskellHttpClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\HaskellServantCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavaClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavaCXFClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavaCXFServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavaInflectorServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavaJAXRSCXFCDIServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavaJAXRSSpecServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavaJerseyServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavaMSF4JServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavaPKMSTServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavaPlayFrameworkCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavaResteasyEapServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavaResteasyServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavascriptClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavascriptClosureAngularClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JavaVertXServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\JMeterCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\KotlinClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\KotlinClientCodegen.DateLibrary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\KotlinServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\KotlinServerCodegen.Constants.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\LuaClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\LumenServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\NancyFXServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\NodeJSServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\ObjcClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\PerlClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\PhpClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\PistacheServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\PowerShellClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\PythonClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\Qt5CPPGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\Rails5ServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\RClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\RestbedCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\RubyClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\RustClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\RustServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\ScalaClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\ScalaGatlingCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\ScalaLagomServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\ScalatraServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\ScalazClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\SilexServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\SinatraServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\SlimFrameworkServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\SpringCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\StaticDocCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\StaticHtml2Generator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\StaticHtmlGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\SwaggerGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\SwaggerYamlGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\Swift3Codegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\Swift4Codegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\SwiftCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\SymfonyServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\TizenClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\TypeScriptAngularClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\TypeScriptAngularJsClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\TypeScriptAureliaClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\TypeScriptFetchClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\TypeScriptJqueryClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\TypeScriptNodeClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\UndertowCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\ZendExpressivePathHandlerServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\BeanValidationExtendedFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\BeanValidationFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\CXFFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\CXFServerFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\GzipFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\GzipTestFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\JbossFeature.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\LoggingFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\LoggingTestFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\OptionalFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\PerformBeanValidationFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\SpringFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\SwaggerFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\SwaggerUIFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\UseGenericResponseFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\mustache\CamelCaseLambda.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\mustache\IndentedLambda.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\mustache\LowercaseLambda.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\mustache\TitlecaseLambda.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\mustache\UppercaseLambda.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\utils\ImplementationVersion.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\utils\Markdown.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\utils\ModelUtils.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\utils\OptionUtils.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\utils\SemVer.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\overview-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\config\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\config\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\config\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\auth\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\auth\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\auth\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\config\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\config\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\config\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\examples\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\examples\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\examples\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\mustache\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\mustache\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\mustache\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\utils\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\utils\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\utils\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\constant-values.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\serialized-form.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\config\class-use\ConfigParser.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\config\class-use\Config.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\SupportingFile.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\MetaGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\InlineModelResolver.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\GlobalSupportingFile.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\Generator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\DefaultGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\DefaultCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CodegenType.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CodegenSecurity.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CodegenResponse.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CodegenProperty.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CodegenParameter.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CodegenOperation.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CodegenModelType.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CodegenModelFactory.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CodegenModel.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CodegenConstants.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CodegenConstants.MODEL_PROPERTY_NAMING_TYPE.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CodegenConstants.ENUM_PROPERTY_NAMING_TYPE.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CodegenConfigLoader.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CodegenConfig.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\Codegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\CliOption.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\ClientOpts.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\ClientOptInput.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\class-use\AbstractGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\auth\class-use\AuthParser.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\auth\class-use\AuthMethod.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\config\class-use\CodegenConfiguratorUtils.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\config\class-use\CodegenConfigurator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\examples\class-use\XmlExampleGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\examples\class-use\ExampleGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\class-use\CodegenIgnoreProcessor.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\class-use\Rule.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\class-use\Rule.Operation.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\class-use\RootedFileRule.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\class-use\ParserException.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\class-use\InvalidRule.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\class-use\IgnoreLineParser.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\class-use\FileRule.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\class-use\EverythingRule.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\class-use\DirectoryRule.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\ZendExpressivePathHandlerServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\UndertowCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\TypeScriptNodeClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\TypeScriptJqueryClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\TypeScriptFetchClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\TypeScriptAureliaClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\TypeScriptAngularJsClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\TypeScriptAngularClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\TizenClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\SymfonyServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\SwiftCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\Swift4Codegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\Swift3Codegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\SwaggerYamlGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\SwaggerGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\StaticHtmlGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\StaticHtml2Generator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\StaticDocCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\SpringCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\SlimFrameworkServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\SinatraServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\SilexServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\ScalazClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\ScalatraServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\ScalaLagomServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\ScalaGatlingCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\ScalaClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\RustServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\RustClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\RubyClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\RestbedCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\RClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\Rails5ServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\Qt5CPPGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\PythonClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\PowerShellClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\PistacheServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\PhpClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\PerlClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\ObjcClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\NodeJSServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\NancyFXServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\LumenServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\LuaClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\KotlinServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\KotlinServerCodegen.Constants.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\KotlinClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\KotlinClientCodegen.DateLibrary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JMeterCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavaVertXServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavascriptClosureAngularClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavascriptClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavaResteasyServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavaResteasyEapServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavaPlayFrameworkCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavaPKMSTServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavaMSF4JServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavaJerseyServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavaJAXRSSpecServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavaJAXRSCXFCDIServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavaInflectorServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavaCXFServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavaCXFClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\JavaClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\HaskellServantCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\HaskellHttpClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\GroovyClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\GoServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\GoClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\FlaskConnexionCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\FlashClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\FinchServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\ErlangServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\ErlangClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\ElmClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\ElixirClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\EiffelClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\DartClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\CsharpDotNet2ClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\CSharpClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\CppRestClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\ConfluenceWikiGenerator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\ClojureClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\BashClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AspNetCoreServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\ApexClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\Apache2ConfigCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AndroidClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AkkaScalaClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AdaServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AdaCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AbstractTypeScriptClientCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AbstractScalaCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AbstractPhpCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AbstractKotlinCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AbstractJavaJAXRSServerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AbstractJavaCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AbstractGoCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AbstractEiffelCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AbstractCSharpCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AbstractCppCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\class-use\AbstractAdaCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\UseGenericResponseFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\SwaggerUIFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\SwaggerFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\SpringFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\PerformBeanValidationFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\OptionalFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\LoggingTestFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\LoggingFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\JbossFeature.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\GzipTestFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\GzipFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\CXFServerFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\CXFFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\BeanValidationFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\class-use\BeanValidationExtendedFeatures.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\mustache\class-use\UppercaseLambda.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\mustache\class-use\TitlecaseLambda.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\mustache\class-use\LowercaseLambda.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\mustache\class-use\IndentedLambda.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\mustache\class-use\CamelCaseLambda.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\utils\class-use\SemVer.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\utils\class-use\OptionUtils.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\utils\class-use\ModelUtils.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\utils\class-use\Markdown.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\utils\class-use\ImplementationVersion.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\config\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\auth\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\config\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\examples\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\ignore\rules\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\languages\features\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\mustache\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\io\swagger\codegen\utils\package-use.html...
+Building index for all the packages and classes...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\overview-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\index-all.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\deprecated-list.html...
+Building index for all classes...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\allclasses-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\allclasses-noframe.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\index.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\overview-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\apidocs\help-doc.html...
+8 warnings
+[WARNING] Javadoc Warnings
+[WARNING] D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\src\main\java\io\swagger\codegen\DefaultCodegen.java:2746: warning: no description for @param
+[WARNING] * @param parameter
+[WARNING] ^
+[WARNING] D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\src\main\java\io\swagger\codegen\DefaultCodegen.java:2747: warning: no description for @param
+[WARNING] * @param property
+[WARNING] ^
+[WARNING] D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\src\main\java\io\swagger\codegen\DefaultCodegen.java:2748: warning: no description for @return
+[WARNING] * @return
+[WARNING] ^
+[WARNING] D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\src\main\java\io\swagger\codegen\languages\AbstractTypeScriptClientCodegen.java:299: warning: no description for @return
+[WARNING] * @return
+[WARNING] ^
+[WARNING] D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\src\main\java\io\swagger\codegen\languages\AbstractTypeScriptClientCodegen.java:318: warning: no description for @param
+[WARNING] * @param values
+[WARNING] ^
+[WARNING] D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\src\main\java\io\swagger\codegen\languages\AbstractTypeScriptClientCodegen.java:319: warning: no description for @return
+[WARNING] * @return
+[WARNING] ^
+[WARNING] D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\src\main\java\io\swagger\codegen\languages\StaticHtmlGenerator.java:80: warning - Tag @link: can't find processCompiler(Compiler) in io.swagger.codegen.DefaultCodegen
+[WARNING] D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\src\main\java\io\swagger\codegen\languages\ZendExpressivePathHandlerServerCodegen.java:136: warning: no description for @param
+[WARNING] * @param swagger
+[WARNING] ^
+[INFO] Building jar: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\swagger-codegen-2.4.0-SNAPSHOT-javadoc.jar
+[INFO] 
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ swagger-codegen ---
+[INFO] Building jar: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\swagger-codegen-2.4.0-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ swagger-codegen ---
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\swagger-codegen-2.4.0-SNAPSHOT.jar to C:\Users\sliakh\.m2\repository\io\swagger\swagger-codegen\2.4.0-SNAPSHOT\swagger-codegen-2.4.0-SNAPSHOT.jar
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\pom.xml to C:\Users\sliakh\.m2\repository\io\swagger\swagger-codegen\2.4.0-SNAPSHOT\swagger-codegen-2.4.0-SNAPSHOT.pom
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\swagger-codegen-2.4.0-SNAPSHOT-tests.jar to C:\Users\sliakh\.m2\repository\io\swagger\swagger-codegen\2.4.0-SNAPSHOT\swagger-codegen-2.4.0-SNAPSHOT-tests.jar
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\swagger-codegen-2.4.0-SNAPSHOT-javadoc.jar to C:\Users\sliakh\.m2\repository\io\swagger\swagger-codegen\2.4.0-SNAPSHOT\swagger-codegen-2.4.0-SNAPSHOT-javadoc.jar
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\target\swagger-codegen-2.4.0-SNAPSHOT-sources.jar to C:\Users\sliakh\.m2\repository\io\swagger\swagger-codegen\2.4.0-SNAPSHOT\swagger-codegen-2.4.0-SNAPSHOT-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building swagger-codegen (executable) 2.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ swagger-codegen-cli ---
+[INFO] Deleting D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ swagger-codegen-cli ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ swagger-codegen-cli ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ swagger-codegen-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ swagger-codegen-cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ swagger-codegen-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ swagger-codegen-cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ swagger-codegen-cli ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-testng) @ swagger-codegen-cli ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.663 sec - in TestSuite
+
+Results :
+
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ swagger-codegen-cli ---
+[INFO] Building jar: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\swagger-codegen-cli.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.3:shade (process-resources) @ swagger-codegen-cli ---
+[INFO] Including io.swagger:swagger-codegen:jar:2.4.0-SNAPSHOT in the shaded jar.
+[INFO] Including io.swagger:swagger-parser:jar:1.0.34 in the shaded jar.
+[INFO] Including io.swagger:swagger-compat-spec-parser:jar:1.0.34 in the shaded jar.
+[INFO] Including com.github.java-json-tools:json-schema-validator:jar:2.2.8 in the shaded jar.
+[INFO] Including com.github.java-json-tools:json-schema-core:jar:1.2.8 in the shaded jar.
+[INFO] Including org.mozilla:rhino:jar:1.7R4 in the shaded jar.
+[INFO] Including com.github.fge:uri-template:jar:0.9 in the shaded jar.
+[INFO] Including javax.mail:mailapi:jar:1.4.3 in the shaded jar.
+[INFO] Including javax.activation:activation:jar:1.1 in the shaded jar.
+[INFO] Including joda-time:joda-time:jar:2.9.7 in the shaded jar.
+[INFO] Including com.googlecode.libphonenumber:libphonenumber:jar:8.0.0 in the shaded jar.
+[INFO] Including com.google.code.findbugs:jsr305:jar:3.0.1 in the shaded jar.
+[INFO] Including net.sf.jopt-simple:jopt-simple:jar:5.0.3 in the shaded jar.
+[INFO] Including com.github.fge:json-patch:jar:1.6 in the shaded jar.
+[INFO] Including com.github.fge:jackson-coreutils:jar:1.6 in the shaded jar.
+[INFO] Including com.github.fge:msg-simple:jar:1.1 in the shaded jar.
+[INFO] Including com.github.fge:btf:jar:1.2 in the shaded jar.
+[INFO] Including org.apache.httpcomponents:httpclient:jar:4.5.2 in the shaded jar.
+[INFO] Including org.apache.httpcomponents:httpcore:jar:4.4.4 in the shaded jar.
+[INFO] Including commons-logging:commons-logging:jar:1.2 in the shaded jar.
+[INFO] Including commons-codec:commons-codec:jar:1.9 in the shaded jar.
+[INFO] Including io.swagger:swagger-core:jar:1.5.18 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.9.3 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-databind:jar:2.9.3 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-core:jar:2.9.3 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.9.3 in the shaded jar.
+[INFO] Including io.swagger:swagger-models:jar:1.5.18 in the shaded jar.
+[INFO] Including io.swagger:swagger-annotations:jar:1.5.18 in the shaded jar.
+[INFO] Including javax.validation:validation-api:jar:1.1.0.Final in the shaded jar.
+[INFO] Including com.samskivert:jmustache:jar:1.12 in the shaded jar.
+[INFO] Including commons-io:commons-io:jar:2.4 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-ext:jar:1.7.12 in the shaded jar.
+[INFO] Including ch.qos.cal10n:cal10n-api:jar:0.8.1 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.12 in the shaded jar.
+[INFO] Including org.apache.commons:commons-lang3:jar:3.4 in the shaded jar.
+[INFO] Including commons-cli:commons-cli:jar:1.2 in the shaded jar.
+[INFO] Including com.atlassian.commonmark:commonmark:jar:0.9.0 in the shaded jar.
+[INFO] Including io.airlift:airline:jar:0.7 in the shaded jar.
+[INFO] Including javax.inject:javax.inject:jar:1 in the shaded jar.
+[INFO] Including com.google.code.findbugs:annotations:jar:2.0.3 in the shaded jar.
+[INFO] Including com.google.guava:guava:jar:18.0 in the shaded jar.
+[INFO] Including com.googlecode.lambdaj:lambdaj:jar:2.3.3 in the shaded jar.
+[INFO] Including org.hamcrest:hamcrest-all:jar:1.1 in the shaded jar.
+[INFO] Including org.objenesis:objenesis:jar:1.2 in the shaded jar.
+[INFO] Including cglib:cglib-nodep:jar:2.2 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-simple:jar:1.7.12 in the shaded jar.
+[INFO] Including org.yaml:snakeyaml:jar:1.15 in the shaded jar.
+[WARNING] jsr305-3.0.1.jar, annotations-2.0.3.jar define 35 overlappping classes: 
+[WARNING]   - javax.annotation.RegEx
+[WARNING]   - javax.annotation.concurrent.Immutable
+[WARNING]   - javax.annotation.meta.TypeQualifierDefault
+[WARNING]   - javax.annotation.meta.TypeQualifier
+[WARNING]   - javax.annotation.Syntax
+[WARNING]   - javax.annotation.Nonnull
+[WARNING]   - javax.annotation.CheckReturnValue
+[WARNING]   - javax.annotation.CheckForNull
+[WARNING]   - javax.annotation.meta.TypeQualifierNickname
+[WARNING]   - javax.annotation.MatchesPattern
+[WARNING]   - 25 more...
+[WARNING] maven-shade-plugin has detected that some .class files
+[WARNING] are present in two or more JARs. When this happens, only
+[WARNING] one single version of the class is copied in the uberjar.
+[WARNING] Usually this is not harmful and you can skeep these
+[WARNING] warnings, otherwise try to manually exclude artifacts
+[WARNING] based on mvn dependency:tree -Ddetail=true and the above
+[WARNING] output
+[WARNING] See http://docs.codehaus.org/display/MAVENUSER/Shade+Plugin
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\swagger-codegen-cli.jar with D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\swagger-codegen-cli-2.4.0-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: C:\Users\sliakh\AppData\Local\Temp\dependency-reduced-pom.xml
+[INFO] Dependency-reduced POM written at: C:\Users\sliakh\AppData\Local\Temp\dependency-reduced-pom.xml
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default) @ swagger-codegen-cli ---
+[INFO] Copying commons-lang3-3.4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\commons-lang3-3.4.jar
+[INFO] Copying libphonenumber-8.0.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\libphonenumber-8.0.0.jar
+[INFO] Copying jopt-simple-5.0.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\jopt-simple-5.0.3.jar
+[INFO] Copying cal10n-api-0.8.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\cal10n-api-0.8.1.jar
+[INFO] Copying guice-4.0-no_aop.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\guice-4.0-no_aop.jar
+[INFO] Copying aopalliance-1.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\aopalliance-1.0.jar
+[INFO] Copying slf4j-api-1.7.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\slf4j-api-1.7.12.jar
+[INFO] Copying hamcrest-all-1.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\hamcrest-all-1.1.jar
+[INFO] Copying jcommander-1.48.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\jcommander-1.48.jar
+[INFO] Copying testng-6.9.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\testng-6.9.6.jar
+[INFO] Copying jmustache-1.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\jmustache-1.12.jar
+[INFO] Copying slf4j-simple-1.7.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\slf4j-simple-1.7.12.jar
+[INFO] Copying httpclient-4.5.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\httpclient-4.5.2.jar
+[INFO] Copying objenesis-1.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\objenesis-1.2.jar
+[INFO] Copying swagger-annotations-1.5.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\swagger-annotations-1.5.18.jar
+[INFO] Copying cglib-nodep-2.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\cglib-nodep-2.2.jar
+[INFO] Copying snakeyaml-1.15.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\snakeyaml-1.15.jar
+[INFO] Copying swagger-compat-spec-parser-1.0.34.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\swagger-compat-spec-parser-1.0.34.jar
+[INFO] Copying commons-io-2.4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\commons-io-2.4.jar
+[INFO] Copying lambdaj-2.3.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\lambdaj-2.3.3.jar
+[INFO] Copying commons-codec-1.9.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\commons-codec-1.9.jar
+[INFO] Copying jackson-databind-2.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\jackson-databind-2.9.3.jar
+[INFO] Copying jsr305-3.0.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\jsr305-3.0.1.jar
+[INFO] Copying json-schema-validator-2.2.8.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\json-schema-validator-2.2.8.jar
+[INFO] Copying json-schema-core-1.2.8.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\json-schema-core-1.2.8.jar
+[INFO] Copying commons-logging-1.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\commons-logging-1.2.jar
+[INFO] Copying btf-1.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\btf-1.2.jar
+[INFO] Copying json-patch-1.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\json-patch-1.6.jar
+[INFO] Copying airline-0.7.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\airline-0.7.jar
+[INFO] Copying validation-api-1.1.0.Final.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\validation-api-1.1.0.Final.jar
+[INFO] Copying jackson-annotations-2.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\jackson-annotations-2.9.3.jar
+[INFO] Copying swagger-models-1.5.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\swagger-models-1.5.18.jar
+[INFO] Copying msg-simple-1.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\msg-simple-1.1.jar
+[INFO] Copying ant-launcher-1.7.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\ant-launcher-1.7.0.jar
+[INFO] Copying annotations-2.0.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\annotations-2.0.3.jar
+[INFO] Copying ant-1.7.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\ant-1.7.0.jar
+[INFO] Copying bsh-2.0b4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\bsh-2.0b4.jar
+[INFO] Copying activation-1.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\activation-1.1.jar
+[INFO] Copying joda-time-2.9.7.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\joda-time-2.9.7.jar
+[INFO] Copying junit-4.8.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\junit-4.8.1.jar
+[INFO] Copying mailapi-1.4.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\mailapi-1.4.3.jar
+[INFO] Copying commons-cli-1.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\commons-cli-1.2.jar
+[INFO] Copying jmockit-1.25.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\jmockit-1.25.jar
+[INFO] Copying javax.inject-1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\javax.inject-1.jar
+[INFO] Copying jackson-dataformat-yaml-2.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\jackson-dataformat-yaml-2.9.3.jar
+[INFO] Copying swagger-core-1.5.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\swagger-core-1.5.18.jar
+[INFO] Copying guava-18.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\guava-18.0.jar
+[INFO] Copying uri-template-0.9.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\uri-template-0.9.jar
+[INFO] Copying slf4j-ext-1.7.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\slf4j-ext-1.7.12.jar
+[INFO] Copying rhino-1.7R4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\rhino-1.7R4.jar
+[INFO] Copying jackson-coreutils-1.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\jackson-coreutils-1.6.jar
+[INFO] Copying jackson-core-2.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\jackson-core-2.9.3.jar
+[INFO] Copying swagger-codegen-2.4.0-SNAPSHOT.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\swagger-codegen-2.4.0-SNAPSHOT.jar
+[INFO] Copying commonmark-0.9.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\commonmark-0.9.0.jar
+[INFO] Copying swagger-parser-1.0.34.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\swagger-parser-1.0.34.jar
+[INFO] Copying httpcore-4.4.4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\lib\httpcore-4.4.4.jar
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.10.4:jar (attach-javadocs) @ swagger-codegen-cli ---
+[INFO] The goal 'org.apache.maven.plugins:maven-javadoc-plugin:2.10.4:javadoc' has not been previously called for the module: 'io.swagger:swagger-codegen:jar:2.4.0-SNAPSHOT'. Trying to invoke it...
+[WARNING] Creating fake javadoc directory to prevent repeated invocations: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen\D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs
+[INFO] 
+Loading source files for package io.swagger.codegen.cmd...
+Loading source files for package io.swagger.codegen...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_151
+Building tree for all the packages and classes...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\ConfigHelp.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\Generate.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\Langs.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\Meta.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\Validate.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\ValidateException.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\Version.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\SwaggerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\overview-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\constant-values.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\serialized-form.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\class-use\Version.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\class-use\ValidateException.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\class-use\Validate.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\class-use\Meta.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\class-use\Langs.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\class-use\Generate.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\class-use\ConfigHelp.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\class-use\SwaggerCodegen.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\io\swagger\codegen\cmd\package-use.html...
+Building index for all the packages and classes...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\overview-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\index-all.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\deprecated-list.html...
+Building index for all classes...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\allclasses-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\allclasses-noframe.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\index.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\overview-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\apidocs\help-doc.html...
+[INFO] Building jar: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\swagger-codegen-cli-javadoc.jar
+[INFO] 
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ swagger-codegen-cli ---
+[INFO] Building jar: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\swagger-codegen-cli-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ swagger-codegen-cli ---
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\swagger-codegen-cli.jar to C:\Users\sliakh\.m2\repository\io\swagger\swagger-codegen-cli\2.4.0-SNAPSHOT\swagger-codegen-cli-2.4.0-SNAPSHOT.jar
+[INFO] Installing C:\Users\sliakh\AppData\Local\Temp\dependency-reduced-pom.xml to C:\Users\sliakh\.m2\repository\io\swagger\swagger-codegen-cli\2.4.0-SNAPSHOT\swagger-codegen-cli-2.4.0-SNAPSHOT.pom
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\swagger-codegen-cli-javadoc.jar to C:\Users\sliakh\.m2\repository\io\swagger\swagger-codegen-cli\2.4.0-SNAPSHOT\swagger-codegen-cli-2.4.0-SNAPSHOT-javadoc.jar
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-cli\target\swagger-codegen-cli-sources.jar to C:\Users\sliakh\.m2\repository\io\swagger\swagger-codegen-cli\2.4.0-SNAPSHOT\swagger-codegen-cli-2.4.0-SNAPSHOT-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building swagger-codegen (maven-plugin) 2.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ swagger-codegen-maven-plugin ---
+[INFO] Deleting D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ swagger-codegen-maven-plugin ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ swagger-codegen-maven-plugin ---
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:helpmojo (help-goal) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 0 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ swagger-codegen-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\classes
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (default-descriptor) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (mojo-descriptor) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ swagger-codegen-maven-plugin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ swagger-codegen-maven-plugin ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-testng) @ swagger-codegen-maven-plugin ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ swagger-codegen-maven-plugin ---
+[INFO] Building jar: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\swagger-codegen-maven-plugin-2.4.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:addPluginArtifactMetadata (default-addPluginArtifactMetadata) @ swagger-codegen-maven-plugin ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default) @ swagger-codegen-maven-plugin ---
+[INFO] Copying commons-lang3-3.4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\commons-lang3-3.4.jar
+[INFO] Copying libphonenumber-8.0.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\libphonenumber-8.0.0.jar
+[INFO] Copying jopt-simple-5.0.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\jopt-simple-5.0.3.jar
+[INFO] Copying aether-impl-1.0.0.v20140518.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\aether-impl-1.0.0.v20140518.jar
+[INFO] Copying cal10n-api-0.8.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\cal10n-api-0.8.1.jar
+[INFO] Copying aopalliance-1.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\aopalliance-1.0.jar
+[INFO] Copying aether-spi-1.0.0.v20140518.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\aether-spi-1.0.0.v20140518.jar
+[INFO] Copying slf4j-api-1.7.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\slf4j-api-1.7.12.jar
+[INFO] Copying maven-settings-builder-3.2.5.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\maven-settings-builder-3.2.5.jar
+[INFO] Copying maven-model-builder-3.2.5.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\maven-model-builder-3.2.5.jar
+[INFO] Copying jmustache-1.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\jmustache-1.12.jar
+[INFO] Copying cdi-api-1.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\cdi-api-1.0.jar
+[INFO] Copying maven-artifact-3.2.5.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\maven-artifact-3.2.5.jar
+[INFO] Copying slf4j-simple-1.7.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\slf4j-simple-1.7.12.jar
+[INFO] Copying plexus-component-annotations-1.5.5.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\plexus-component-annotations-1.5.5.jar
+[INFO] Copying maven-core-3.2.5.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\maven-core-3.2.5.jar
+[INFO] Copying httpclient-4.5.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\httpclient-4.5.2.jar
+[INFO] Copying maven-repository-metadata-3.2.5.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\maven-repository-metadata-3.2.5.jar
+[INFO] Copying maven-model-3.2.5.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\maven-model-3.2.5.jar
+[INFO] Copying swagger-annotations-1.5.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\swagger-annotations-1.5.18.jar
+[INFO] Copying jsr250-api-1.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\jsr250-api-1.0.jar
+[INFO] Copying swagger-compat-spec-parser-1.0.34.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\swagger-compat-spec-parser-1.0.34.jar
+[INFO] Copying commons-io-2.4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\commons-io-2.4.jar
+[INFO] Copying wagon-provider-api-2.8.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\wagon-provider-api-2.8.jar
+[INFO] Copying commons-codec-1.9.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\commons-codec-1.9.jar
+[INFO] Copying jackson-databind-2.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\jackson-databind-2.9.3.jar
+[INFO] Copying jsr305-3.0.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\jsr305-3.0.1.jar
+[INFO] Copying aether-api-1.0.0.v20140518.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\aether-api-1.0.0.v20140518.jar
+[INFO] Copying json-schema-validator-2.2.8.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\json-schema-validator-2.2.8.jar
+[INFO] Copying json-schema-core-1.2.8.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\json-schema-core-1.2.8.jar
+[INFO] Copying commons-logging-1.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\commons-logging-1.2.jar
+[INFO] Copying plexus-utils-3.0.20.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\plexus-utils-3.0.20.jar
+[INFO] Copying guava-16.0.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\guava-16.0.1.jar
+[INFO] Copying org.eclipse.sisu.inject-0.3.0.M1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\org.eclipse.sisu.inject-0.3.0.M1.jar
+[INFO] Copying snakeyaml-1.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\snakeyaml-1.18.jar
+[INFO] Copying btf-1.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\btf-1.2.jar
+[INFO] Copying plexus-interpolation-1.21.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\plexus-interpolation-1.21.jar
+[INFO] Copying json-patch-1.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\json-patch-1.6.jar
+[INFO] Copying validation-api-1.1.0.Final.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\validation-api-1.1.0.Final.jar
+[INFO] Copying plexus-cipher-1.4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\plexus-cipher-1.4.jar
+[INFO] Copying maven-compat-3.2.5.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\maven-compat-3.2.5.jar
+[INFO] Copying maven-plugin-annotations-3.4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\maven-plugin-annotations-3.4.jar
+[INFO] Copying jackson-annotations-2.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\jackson-annotations-2.9.3.jar
+[INFO] Copying swagger-models-1.5.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\swagger-models-1.5.18.jar
+[INFO] Copying msg-simple-1.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\msg-simple-1.1.jar
+[INFO] Copying org.eclipse.sisu.plexus-0.3.0.M1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\org.eclipse.sisu.plexus-0.3.0.M1.jar
+[INFO] Copying activation-1.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\activation-1.1.jar
+[INFO] Copying joda-time-2.9.7.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\joda-time-2.9.7.jar
+[INFO] Copying plexus-classworlds-2.5.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\plexus-classworlds-2.5.2.jar
+[INFO] Copying junit-4.8.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\junit-4.8.1.jar
+[INFO] Copying mailapi-1.4.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\mailapi-1.4.3.jar
+[INFO] Copying commons-cli-1.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\commons-cli-1.2.jar
+[INFO] Copying maven-plugin-api-3.2.5.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\maven-plugin-api-3.2.5.jar
+[INFO] Copying sisu-guice-3.2.3-no_aop.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\sisu-guice-3.2.3-no_aop.jar
+[INFO] Copying javax.inject-1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\javax.inject-1.jar
+[INFO] Copying jackson-dataformat-yaml-2.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\jackson-dataformat-yaml-2.9.3.jar
+[INFO] Copying plexus-sec-dispatcher-1.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\plexus-sec-dispatcher-1.3.jar
+[INFO] Copying swagger-core-1.5.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\swagger-core-1.5.18.jar
+[INFO] Copying maven-aether-provider-3.2.5.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\maven-aether-provider-3.2.5.jar
+[INFO] Copying aether-util-1.0.0.v20140518.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\aether-util-1.0.0.v20140518.jar
+[INFO] Copying maven-settings-3.2.5.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\maven-settings-3.2.5.jar
+[INFO] Copying uri-template-0.9.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\uri-template-0.9.jar
+[INFO] Copying slf4j-ext-1.7.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\slf4j-ext-1.7.12.jar
+[INFO] Copying rhino-1.7R4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\rhino-1.7R4.jar
+[INFO] Copying jackson-coreutils-1.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\jackson-coreutils-1.6.jar
+[INFO] Copying jackson-core-2.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\jackson-core-2.9.3.jar
+[INFO] Copying swagger-codegen-2.4.0-SNAPSHOT.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\swagger-codegen-2.4.0-SNAPSHOT.jar
+[INFO] Copying commonmark-0.9.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\commonmark-0.9.0.jar
+[INFO] Copying swagger-parser-1.0.34.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\swagger-parser-1.0.34.jar
+[INFO] Copying httpcore-4.4.4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\lib\httpcore-4.4.4.jar
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.10.4:jar (attach-javadocs) @ swagger-codegen-maven-plugin ---
+[INFO] 
+Loading source files for package io.swagger.codegen.plugin...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_151
+Building tree for all the packages and classes...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\io\swagger\codegen\plugin\CodeGenMojo.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\io\swagger\codegen\plugin\HelpMojo.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\io\swagger\codegen\plugin\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\io\swagger\codegen\plugin\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\io\swagger\codegen\plugin\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\constant-values.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\io\swagger\codegen\plugin\class-use\HelpMojo.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\io\swagger\codegen\plugin\class-use\CodeGenMojo.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\io\swagger\codegen\plugin\package-use.html...
+Building index for all the packages and classes...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\overview-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\index-all.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\deprecated-list.html...
+Building index for all classes...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\allclasses-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\allclasses-noframe.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\index.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\apidocs\help-doc.html...
+[INFO] Building jar: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\swagger-codegen-maven-plugin-2.4.0-SNAPSHOT-javadoc.jar
+[INFO] 
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ swagger-codegen-maven-plugin ---
+[INFO] Building jar: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\swagger-codegen-maven-plugin-2.4.0-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ swagger-codegen-maven-plugin ---
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\swagger-codegen-maven-plugin-2.4.0-SNAPSHOT.jar to C:\Users\sliakh\.m2\repository\io\swagger\swagger-codegen-maven-plugin\2.4.0-SNAPSHOT\swagger-codegen-maven-plugin-2.4.0-SNAPSHOT.jar
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\pom.xml to C:\Users\sliakh\.m2\repository\io\swagger\swagger-codegen-maven-plugin\2.4.0-SNAPSHOT\swagger-codegen-maven-plugin-2.4.0-SNAPSHOT.pom
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\swagger-codegen-maven-plugin-2.4.0-SNAPSHOT-javadoc.jar to C:\Users\sliakh\.m2\repository\io\swagger\swagger-codegen-maven-plugin\2.4.0-SNAPSHOT\swagger-codegen-maven-plugin-2.4.0-SNAPSHOT-javadoc.jar
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-codegen-maven-plugin\target\swagger-codegen-maven-plugin-2.4.0-SNAPSHOT-sources.jar to C:\Users\sliakh\.m2\repository\io\swagger\swagger-codegen-maven-plugin\2.4.0-SNAPSHOT\swagger-codegen-maven-plugin-2.4.0-SNAPSHOT-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building swagger-generator 2.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ swagger-generator ---
+[INFO] Deleting D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ swagger-generator ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ swagger-generator ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ swagger-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- download-maven-plugin:1.2.1:wget (swagger-ui) @ swagger-generator ---
+[INFO] Got from cache: C:\Users\sliakh\.m2\repository\.cache\maven-download-plugin\master.tar.gz
+[INFO] Expanding: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\master.tar.gz into D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ swagger-generator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\classes
+[INFO] /D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-generator/src/main/java/io/swagger/generator/DynamicSwaggerConfig.java: Some input files use or override a deprecated API.
+[INFO] /D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-generator/src/main/java/io/swagger/generator/DynamicSwaggerConfig.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ swagger-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ swagger-generator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ swagger-generator ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-testng) @ swagger-generator ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.826 sec - in TestSuite
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO] 
+[INFO] --- maven-war-plugin:3.1.0:war (default-war) @ swagger-generator ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [swagger-generator] in [D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\swagger-generator-2.4.0-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp webResources [D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target/swagger-ui-master/dist] to [D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\swagger-generator-2.4.0-SNAPSHOT]
+[INFO] Copying webapp resources [D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\src\main\webapp]
+[INFO] Webapp assembled in [1428 msecs]
+[INFO] Building war: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\swagger-generator-2.4.0-SNAPSHOT.war
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default) @ swagger-generator ---
+[INFO] Copying commons-lang3-3.4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\commons-lang3-3.4.jar
+[INFO] Copying jopt-simple-5.0.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jopt-simple-5.0.3.jar
+[INFO] Copying cal10n-api-0.8.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\cal10n-api-0.8.1.jar
+[INFO] Copying aopalliance-1.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\aopalliance-1.0.jar
+[INFO] Copying jersey-server-2.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jersey-server-2.6.jar
+[INFO] Copying jetty-annotations-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-annotations-9.2.9.v20150224.jar
+[INFO] Copying jetty-plus-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-plus-9.2.9.v20150224.jar
+[INFO] Copying slf4j-api-1.7.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\slf4j-api-1.7.12.jar
+[INFO] Copying websocket-common-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\websocket-common-9.2.9.v20150224.jar
+[INFO] Copying jcommander-1.48.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jcommander-1.48.jar
+[INFO] Copying asm-tree-5.0.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\asm-tree-5.0.1.jar
+[INFO] Copying slf4j-simple-1.7.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\slf4j-simple-1.7.12.jar
+[INFO] Copying javassist-3.21.0-GA.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\javassist-3.21.0-GA.jar
+[INFO] Copying swagger-annotations-1.5.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\swagger-annotations-1.5.18.jar
+[INFO] Copying websocket-servlet-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\websocket-servlet-9.2.9.v20150224.jar
+[INFO] Copying snakeyaml-1.15.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\snakeyaml-1.15.jar
+[INFO] Copying jackson-jaxrs-json-provider-2.8.9.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jackson-jaxrs-json-provider-2.8.9.jar
+[INFO] Copying commons-io-2.4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\commons-io-2.4.jar
+[INFO] Copying commons-codec-1.9.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\commons-codec-1.9.jar
+[INFO] Copying jetty-http-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-http-9.2.9.v20150224.jar
+[INFO] Copying jsr305-3.0.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jsr305-3.0.1.jar
+[INFO] Copying guava-20.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\guava-20.0.jar
+[INFO] Copying json-schema-core-1.2.8.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\json-schema-core-1.2.8.jar
+[INFO] Copying commons-logging-1.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\commons-logging-1.2.jar
+[INFO] Copying jetty-jndi-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-jndi-9.2.9.v20150224.jar
+[INFO] Copying asm-5.0.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\asm-5.0.1.jar
+[INFO] Copying validation-api-1.1.0.Final.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\validation-api-1.1.0.Final.jar
+[INFO] Copying jackson-annotations-2.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jackson-annotations-2.9.3.jar
+[INFO] Copying jetty-util-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-util-9.2.9.v20150224.jar
+[INFO] Copying javax.servlet.jsp.jstl-1.2.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\javax.servlet.jsp.jstl-1.2.2.jar
+[INFO] Copying ant-1.7.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\ant-1.7.0.jar
+[INFO] Copying bsh-2.0b4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\bsh-2.0b4.jar
+[INFO] Copying logback-classic-1.0.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\logback-classic-1.0.1.jar
+[INFO] Copying activation-1.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\activation-1.1.jar
+[INFO] Copying hk2-locator-2.2.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\hk2-locator-2.2.0.jar
+[INFO] Copying mailapi-1.4.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\mailapi-1.4.3.jar
+[INFO] Copying jetty-server-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-server-9.2.9.v20150224.jar
+[INFO] Copying javax.servlet.jsp-api-2.3.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\javax.servlet.jsp-api-2.3.1.jar
+[INFO] Copying websocket-client-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\websocket-client-9.2.9.v20150224.jar
+[INFO] Copying zip4j-1.3.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\zip4j-1.3.2.jar
+[INFO] Copying jetty-xml-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-xml-9.2.9.v20150224.jar
+[INFO] Copying javax.servlet.jsp-2.3.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\javax.servlet.jsp-2.3.2.jar
+[INFO] Copying javax.inject-1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\javax.inject-1.jar
+[INFO] Copying jetty-io-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-io-9.2.9.v20150224.jar
+[INFO] Copying osgi-resource-locator-1.0.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\osgi-resource-locator-1.0.1.jar
+[INFO] Copying javax.servlet-api-3.1.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\javax.servlet-api-3.1.0.jar
+[INFO] Copying slf4j-ext-1.7.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\slf4j-ext-1.7.12.jar
+[INFO] Copying jackson-coreutils-1.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jackson-coreutils-1.6.jar
+[INFO] Copying servlet-api-2.5.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\servlet-api-2.5.jar
+[INFO] Copying reflections-0.9.11.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\reflections-0.9.11.jar
+[INFO] Copying jetty-webapp-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-webapp-9.2.9.v20150224.jar
+[INFO] Copying jetty-runner-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-runner-9.2.9.v20150224.jar
+[INFO] Copying jetty-schemas-3.1.M0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-schemas-3.1.M0.jar
+[INFO] Copying jackson-core-2.8.9.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jackson-core-2.8.9.jar
+[INFO] Copying swagger-parser-1.0.34.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\swagger-parser-1.0.34.jar
+[INFO] Copying libphonenumber-8.0.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\libphonenumber-8.0.0.jar
+[INFO] Copying websocket-server-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\websocket-server-9.2.9.v20150224.jar
+[INFO] Copying guice-4.0-no_aop.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\guice-4.0-no_aop.jar
+[INFO] Copying jersey-media-multipart-2.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jersey-media-multipart-2.6.jar
+[INFO] Copying jetty-servlet-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-servlet-9.2.9.v20150224.jar
+[INFO] Copying testng-6.9.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\testng-6.9.6.jar
+[INFO] Copying jmustache-1.12.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jmustache-1.12.jar
+[INFO] Copying jetty-security-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-security-9.2.9.v20150224.jar
+[INFO] Copying httpclient-4.5.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\httpclient-4.5.2.jar
+[INFO] Copying swagger-compat-spec-parser-1.0.34.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\swagger-compat-spec-parser-1.0.34.jar
+[INFO] Copying jetty-jaas-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-jaas-9.2.9.v20150224.jar
+[INFO] Copying jackson-module-jaxb-annotations-2.8.9.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jackson-module-jaxb-annotations-2.8.9.jar
+[INFO] Copying mimepull-1.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\mimepull-1.9.3.jar
+[INFO] Copying jackson-jaxrs-base-2.8.9.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jackson-jaxrs-base-2.8.9.jar
+[INFO] Copying json-schema-validator-2.2.8.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\json-schema-validator-2.2.8.jar
+[INFO] Copying jersey-client-2.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jersey-client-2.6.jar
+[INFO] Copying org.eclipse.jdt.core-3.8.2.v20130121.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\org.eclipse.jdt.core-3.8.2.v20130121.jar
+[INFO] Copying websocket-api-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\websocket-api-9.2.9.v20150224.jar
+[INFO] Copying btf-1.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\btf-1.2.jar
+[INFO] Copying json-patch-1.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\json-patch-1.6.jar
+[INFO] Copying swagger-jersey2-jaxrs-1.5.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\swagger-jersey2-jaxrs-1.5.18.jar
+[INFO] Copying logback-core-1.0.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\logback-core-1.0.1.jar
+[INFO] Copying jersey-common-2.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jersey-common-2.6.jar
+[INFO] Copying swagger-models-1.5.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\swagger-models-1.5.18.jar
+[INFO] Copying msg-simple-1.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\msg-simple-1.1.jar
+[INFO] Copying javax.inject-2.2.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\javax.inject-2.2.0.jar
+[INFO] Copying ant-launcher-1.7.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\ant-launcher-1.7.0.jar
+[INFO] Copying jackson-databind-2.8.9.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jackson-databind-2.8.9.jar
+[INFO] Copying swagger-codegen-2.4.0-SNAPSHOT-tests.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\swagger-codegen-2.4.0-SNAPSHOT-tests.jar
+[INFO] Copying hk2-api-2.2.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\hk2-api-2.2.0.jar
+[INFO] Copying joda-time-2.9.7.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\joda-time-2.9.7.jar
+[INFO] Copying javax.ws.rs-api-2.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\javax.ws.rs-api-2.0.jar
+[INFO] Copying swagger-jaxrs-1.5.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\swagger-jaxrs-1.5.18.jar
+[INFO] Copying junit-4.8.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\junit-4.8.1.jar
+[INFO] Copying asm-commons-5.0.1.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\asm-commons-5.0.1.jar
+[INFO] Copying aopalliance-repackaged-2.2.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\aopalliance-repackaged-2.2.0.jar
+[INFO] Copying jersey-guava-2.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jersey-guava-2.6.jar
+[INFO] Copying commons-cli-1.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\commons-cli-1.2.jar
+[INFO] Copying javax.annotation-api-1.2.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\javax.annotation-api-1.2.jar
+[INFO] Copying jackson-dataformat-yaml-2.9.3.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jackson-dataformat-yaml-2.9.3.jar
+[INFO] Copying swagger-core-1.5.18.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\swagger-core-1.5.18.jar
+[INFO] Copying javax.servlet.jsp.jstl-1.2.0.v201105211821.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\javax.servlet.jsp.jstl-1.2.0.v201105211821.jar
+[INFO] Copying jetty-start-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-start-9.2.9.v20150224.jar
+[INFO] Copying uri-template-0.9.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\uri-template-0.9.jar
+[INFO] Copying hk2-utils-2.2.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\hk2-utils-2.2.0.jar
+[INFO] Copying rhino-1.7R4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\rhino-1.7R4.jar
+[INFO] Copying swagger-codegen-2.4.0-SNAPSHOT.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\swagger-codegen-2.4.0-SNAPSHOT.jar
+[INFO] Copying jersey-container-servlet-core-2.6.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jersey-container-servlet-core-2.6.jar
+[INFO] Copying jetty-jsp-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-jsp-9.2.9.v20150224.jar
+[INFO] Copying commonmark-0.9.0.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\commonmark-0.9.0.jar
+[INFO] Copying httpcore-4.4.4.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\httpcore-4.4.4.jar
+[INFO] Copying jetty-deploy-9.2.9.v20150224.jar to D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\lib\jetty-deploy-9.2.9.v20150224.jar
+[INFO] 
+[INFO] >>> jetty-maven-plugin:9.2.9.v20150224:start (start-jetty) > validate @ swagger-generator >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ swagger-generator ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ swagger-generator ---
+[INFO] 
+[INFO] <<< jetty-maven-plugin:9.2.9.v20150224:start (start-jetty) < validate @ swagger-generator <<<
+[INFO] 
+[INFO] --- jetty-maven-plugin:9.2.9.v20150224:start (start-jetty) @ swagger-generator ---
+[INFO] Logging initialized @101025ms
+[INFO] Configuring Jetty for project: swagger-generator
+[INFO] Webapp source directory = D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\swagger-generator-2.4.0-SNAPSHOT
+[INFO] Reload Mechanic: automatic
+[INFO] Classes = D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\classes
+[INFO] Context path = /
+[INFO] Tmp directory = D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\tmp
+[INFO] Web defaults = org/eclipse/jetty/webapp/webdefault.xml
+[INFO] Web overrides =  none
+[INFO] web.xml file = file:/D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-generator/target/swagger-generator-2.4.0-SNAPSHOT/WEB-INF/web.xml
+[INFO] Webapp directory = D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\swagger-generator-2.4.0-SNAPSHOT
+[INFO] jetty-9.2.9.v20150224
+[INFO] Started o.e.j.m.p.JettyWebAppContext@5e234821{/,file:/D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-generator/target/swagger-generator-2.4.0-SNAPSHOT/,AVAILABLE}{file:/D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-generator/target/swagger-generator-2.4.0-SNAPSHOT/}
+[WARNING] !RequestLog
+[INFO] Started ServerConnector@284fac32{HTTP/1.1}{0.0.0.0:8080}
+[INFO] Started @108979ms
+[INFO] Started Jetty Server
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.6:integration-test (default) @ swagger-generator ---
+[INFO] Failsafe report directory: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\failsafe-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+There are no tests to run.
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[WARNING] File encoding has not been set, using platform encoding Cp1251, i.e. build is platform dependent!
+[INFO] 
+[INFO] --- jetty-maven-plugin:9.2.9.v20150224:stop (stop-jetty) @ swagger-generator ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.6:verify (default) @ swagger-generator ---
+[INFO] Failsafe report directory: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\failsafe-reports
+[WARNING] File encoding has not been set, using platform encoding Cp1251, i.e. build is platform dependent!
+[INFO] Stopped ServerConnector@284fac32{HTTP/1.1}{0.0.0.0:8080}
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.10.4:jar (attach-javadocs) @ swagger-generator ---
+[INFO] Stopped o.e.j.m.p.JettyWebAppContext@5e234821{/,file:/D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-generator/target/swagger-generator-2.4.0-SNAPSHOT/,UNAVAILABLE}{file:/D:/!!!fork-swagger-codegen/swagger-codegen/modules/swagger-generator/target/swagger-generator-2.4.0-SNAPSHOT/}
+[INFO] 
+Loading source files for package io.swagger.generator...
+Loading source files for package io.swagger.generator.exception...
+Loading source files for package io.swagger.generator.model...
+Loading source files for package io.swagger.generator.online...
+Loading source files for package io.swagger.generator.resource...
+Loading source files for package io.swagger.generator.util...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_151
+Building tree for all the packages and classes...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\Bootstrap.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\DynamicSwaggerConfig.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\exception\ApiException.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\exception\BadRequestException.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\exception\NotFoundException.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\model\ApiResponse.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\model\Generated.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\model\GeneratorInput.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\model\InputOption.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\model\ResponseCode.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\online\Generator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\online\Generator.Type.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\resource\ExceptionWriter.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\resource\SwaggerResource.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\util\ApiOriginFilter.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\util\JacksonJsonProvider.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\util\ValidationException.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\util\ValidationMessage.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\util\ZipUtil.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\overview-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\exception\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\exception\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\exception\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\model\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\model\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\model\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\online\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\online\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\online\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\resource\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\resource\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\resource\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\util\package-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\util\package-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\util\package-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\constant-values.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\serialized-form.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\class-use\DynamicSwaggerConfig.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\class-use\Bootstrap.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\exception\class-use\NotFoundException.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\exception\class-use\BadRequestException.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\exception\class-use\ApiException.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\model\class-use\ResponseCode.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\model\class-use\InputOption.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\model\class-use\GeneratorInput.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\model\class-use\Generated.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\model\class-use\ApiResponse.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\online\class-use\Generator.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\online\class-use\Generator.Type.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\resource\class-use\SwaggerResource.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\resource\class-use\ExceptionWriter.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\util\class-use\ZipUtil.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\util\class-use\ValidationMessage.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\util\class-use\ValidationException.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\util\class-use\JacksonJsonProvider.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\util\class-use\ApiOriginFilter.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\exception\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\model\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\online\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\resource\package-use.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\io\swagger\generator\util\package-use.html...
+Building index for all the packages and classes...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\overview-tree.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\index-all.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\deprecated-list.html...
+Building index for all classes...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\allclasses-frame.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\allclasses-noframe.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\index.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\overview-summary.html...
+Generating D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\apidocs\help-doc.html...
+[INFO] Building jar: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\swagger-generator-2.4.0-SNAPSHOT-javadoc.jar
+[INFO] 
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ swagger-generator ---
+[INFO] Building jar: D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\swagger-generator-2.4.0-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ swagger-generator ---
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\swagger-generator-2.4.0-SNAPSHOT.war to C:\Users\sliakh\.m2\repository\io\swagger\swagger-generator\2.4.0-SNAPSHOT\swagger-generator-2.4.0-SNAPSHOT.war
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\pom.xml to C:\Users\sliakh\.m2\repository\io\swagger\swagger-generator\2.4.0-SNAPSHOT\swagger-generator-2.4.0-SNAPSHOT.pom
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\swagger-generator-2.4.0-SNAPSHOT-javadoc.jar to C:\Users\sliakh\.m2\repository\io\swagger\swagger-generator\2.4.0-SNAPSHOT\swagger-generator-2.4.0-SNAPSHOT-javadoc.jar
+[INFO] Installing D:\!!!fork-swagger-codegen\swagger-codegen\modules\swagger-generator\target\swagger-generator-2.4.0-SNAPSHOT-sources.jar to C:\Users\sliakh\.m2\repository\io\swagger\swagger-generator\2.4.0-SNAPSHOT\swagger-generator-2.4.0-SNAPSHOT-sources.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] swagger-codegen-project ............................ SUCCESS [  2.542 s]
+[INFO] swagger-codegen (core library) ..................... SUCCESS [ 56.339 s]
+[INFO] swagger-codegen (executable) ....................... SUCCESS [ 20.215 s]
+[INFO] swagger-codegen (maven-plugin) ..................... SUCCESS [  6.264 s]
+[INFO] swagger-generator .................................. SUCCESS [ 25.879 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:51 min
+[INFO] Finished at: 2018-03-19T22:14:18+02:00
+[INFO] Final Memory: 78M/1655M
+[INFO] ------------------------------------------------------------------------
